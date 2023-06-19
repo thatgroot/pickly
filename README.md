@@ -1,0 +1,2 @@
+# Pickly
+ pickly nft website
