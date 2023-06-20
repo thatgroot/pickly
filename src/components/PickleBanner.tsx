@@ -1,20 +1,20 @@
 export function PickleBanner() {
   return (
-    <div className="flex flex-col justify-center items-center  h-[416px] w-full relative gap-2.5 p-2.5 bg-black">
-      <p className="m-0  text-[50px] font-bold text-left text-[#e2fd7e]">
+    <div className="flex flex-col justify-center items-center  py-9 lg:py-0 lg:px-0 lg:h-[416px] w-full relative gap-2.5  bg-black">
+      <p className="m-0 text-[16px]  xl:text-[50px] font-bold text-left text-[#e2fd7e]">
         Let the pickalicious journey begin as you indulge
       </p>
-      <div className="flex justify-start items-center  relative gap-[22px]">
-        <p className="m-0  text-[50px] font-bold text-left text-[#e2fd7e]">
+      <div className="flex justify-start items-center  relative gap-[12px] lg:gap-[22px]">
+        <p className="m-0 text-[16px]  xl:text-[50px] font-bold text-left text-[#e2fd7e]">
           in the tastiness of
         </p>
         <svg
-          width="254"
-          height="73"
+          // width="254"
+          // height="73"
           viewBox="0 0 254 73"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className=""
+          className="w-[50px]"
           preserveAspectRatio="none"
         >
           <path

@@ -2,57 +2,60 @@ import BrevoForm from "./BrevoForm";
 
 export function SubscriptionForm() {
   return (
-    <div className="flex flex-col justify-center items-center relative py-[266px] bg-[#dffe71]">
+    <div className="flex flex-col justify-center items-center relative xl:py-[266px] bg-[#dffe71]">
       <BrevoForm />
-      <div className="flex w-[425px] md:w-[640px] lg:w-[1080px] xl:w-[1280px] 2xl:w-[1440px] flex-col justify-between items-center relative p-4 box-border md:p-6 xl:p-12">
-        <div className="flex flex-col justify-start items-center relative gap-[57px]">
-          <div className="flex flex-col justify-start items-center relative gap-4">
-            <p className="leading-[64px] p-0 m-0 text-[100px] font-bold text-center text-black">
+      <div className="flex w-full md:w-[640px] lg:w-[1080px] xl:w-[1280px] 2xl:w-[1440px] flex-col justify-between items-center relative py-3 px-6 box-border md:p-6 xl:p-12">
+        <div className="flex flex-col justify-start items-center relative gap-3 xl:gap-[57px]">
+          <div className="flex flex-col justify-start items-center relative gap-2 xl:gap-4">
+            <p className="xl:leading-[64px] p-0 m-0 text-xl xl:text-[100px] font-bold text-center text-black">
               Launching Soon!
             </p>
-            <p className="leading-[64px] p-0 m-0 text-[100px] font-bold text-center text-black">
+            <p className="xl:leading-[64px] p-0 m-0 text-xl xl:text-[100px] font-bold text-center text-black">
               Want to be in the know?
             </p>
           </div>
-          <p className="leading-[36px] p-0 m-0 h-[114px] text-[40px] text-center text-black">
+          <p className="xl:leading-[36px] p-0 m-0 text-[9px] xl:text-[40px] text-center text-black">
             Sign up here and we’ll reveal the stealth launch details straight to
             your inbox!
           </p>
         </div>
-        <div className="flex flex-col justify-start items-center relative gap-16  w-[425px] md:w-[560px] lg:w-[720px] xl:w-[1080px] 2xl:w-[1260px]">
-          <div className="flex justify-between items-center relative w-full box-border p-4 pl-3 sm:pl-[32px] md:pl-[76px]">
-            <img
-              src={"./subscription-bg.png"}
-              className="absolute left-0 top-0 right-0 bottom-0 w-[425px] sm:w-[425px] md:w-[560px] lg:w-[720px] xl:w-[1080px] 2xl:w-[1260px] h-full"
-            />
-            {/* svg */}
-            <input
-              className="leading-[35px] pt-3 bg-transparent border-none outline-none w-max sm:w-full flex items-center justify-center p-0 m-0 text-[18px]  sm:text-[24px] lg:text-[40px] font-bold text-left text-[#dffe71] z-20"
-              placeholder="Enter Valid Email"
-            />
+        <div className="flex flex-col justify-start items-center relative gap-3 xl:gap-16 w-[75%] my-3">
+          <div className="flex justify-center items-center relative w-full p-1 xl:p-4">
+              <img
+                src={"./subscription-bg.png"}
+                className="absolute left-0 top-0 right-0 bottom-0 w-[90%] lg:w-[720px] xl:w-[1080px] 2xl:w-[1260px] h-full"
+              />
+            {/* <div className="basis-1/2"> */}
+              {/* svg */}
+              <input
+                className="xl:leading-[35px] pt-3 bg-transparent border-none outline-none w-fit sm:w-full flex items-center justify-center p-0 m-0 text-[9px] lg:text-[40px] font-bold text-left text-[#dffe71] z-20"
+                placeholder="Enter Valid Email"
+              />
+            {/* </div> */}
             <div className="flex flex-col justify-start items-center">
               <img
                 src={"./subscription-btn-bg.png"}
-                className="h-16 lg:h-[120px] z-20"
+                className="h-[20px] lg:h-[120px] z-20"
               />
             </div>
           </div>
 
-          <p className="p-0 m-0 leading-[44px] text-[40px] text-center text-black">
+         
+        </div>
+        <p className="p-0 m-0 xl:leading-[44px] text-[9px] xl:text-[40px] text-center text-black">
             By joining, you’ll receive our Pickly Starter Pack to support your
             shilling activities, and you’ll also be subscribed to Pickly’s Dilly
             Mail - our spicy, flavorful community newsletter. Unsubscribe
             anytime - but remember, a pickly-less life is a sour one!
           </p>
-        </div>
       </div>
       <svg
-        width={274}
-        height={262}
+        // width={274}
+        // height={262}
         viewBox="0 0 274 262"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-8 top-10"
+        className="absolute right-8 top-10 w-[50px] xl:w-[274px]"
         preserveAspectRatio="none"
       >
         <path
@@ -273,12 +276,12 @@ export function SubscriptionForm() {
         />
       </svg>
       <svg
-        width={270}
-        height={363}
+        // width={270}
+        // height={363}
         viewBox="0 0 270 363"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute  left-16 -bottom-8"
+        className="absolute  left-4 xl:left-16 -bottom-8 w-[50px]"
         preserveAspectRatio="none"
       >
         <path

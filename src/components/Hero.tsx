@@ -2,33 +2,33 @@ export default function Hero() {
   return (
     <div
       id="about"
-      className="flex flex-col justify-start items-center  w-[-webkit-fill-available] relative overflow-hidden gap-11 py-0 px-24 bg-[#75be24]"
+      className="flex flex-col justify-start items-center  w-[-webkit-fill-available] relative overflow-hidden gap-4 xl:gap-11 pt-3 px-6 bg-[#75be24]"
     >
 
       <div className="flex flex-col xl:flex-row justify-start items-start xl:gap-[48px] 2xl:gap-[64px] w-auto mx-0 my-auto">
-        <div className="flex flex-col justify-start items-start  relative gap-16 w-full">
+        <div className="flex flex-col justify-start items-start  relative gap-3 xl:gap-16 w-full">
           <div className="flex flex-col justify-start items-start  gap-[12px]">
-            <div className="relative flex bg-no-repeat h-[148px] w-full flex-col justify-center items-center  gap-3 py-0 px-3">
-              <div className="flex flex-col gap-3 items-start justify-center z-30">
-                <p className="text-[53px] leading-9 m-0 font-bold text-left text-[#98eb30]">
+            <div className="relative flex bg-no-repeat h-[50px] xl:h-[148px] w-full flex-col justify-center items-center  gap-1 xl:gap-3 py-0 px-3">
+              <div className="flex flex-col gap-1 xl:gap-3 items-start justify-center z-30">
+                <p className="text-[9px] xl:text-[53px] xl:leading-9 m-0 font-bold text-left text-[#98eb30]">
                   Missed Pepe? Chasing
                 </p>
-                <p className="text-[53px] leading-9 m-0 font-bold text-left text-[#dffe71]">
+                <p className="text-[9px] xl:text-[53px] xl:leading-9 m-0 font-bold text-left text-[#dffe71]">
                   New Green?
                 </p>
               </div>
               <img
                 src={"/chasing-pepe.png"}
                 alt=""
-                className="z-10 absolute left-0 right-0 top-0 bottom-0 w-full  h-[124px]"
+                className="z-10 absolute left-0 right-0 top-0 bottom-0 w-full h-[50px] xl:h-[148px]"
               />
             </div>
-            <div className="relative flex bg-no-repeat h-[148px] w-full flex-col justify-center items-center  gap-3 py-0 px-3">
-              <div className="flex flex-col gap-3 items-start justify-center z-30">
-                <p className="text-[53px] leading-9 m-0 font-bold text-left text-[#98eb30]">
+            <div className="relative flex bg-no-repeat h-[50px] xl:h-[148px] w-full flex-col justify-center items-center  gap-1 xl:gap-3 py-0 px-3">
+              <div className="flex flex-col gap-1 xl:gap-3 items-start justify-center z-30">
+                <p className="text-[9px] xl:text-[53px]  xl:leading-9 m-0 font-bold text-left text-[#98eb30]">
                   You Just Found The
                 </p>
-                <p className="text-[53px] leading-9 m-0 font-bold text-left text-[#98eb30]">
+                <p className="text-[9px] xl:text-[53px]  xl:leading-9 m-0 font-bold text-left text-[#98eb30]">
                   Greenest
                   <span className=" font-bold text-left text-[#abe956]">
                     of Greens!
@@ -38,24 +38,24 @@ export default function Hero() {
               <img
                 src={"/just-found.png"}
                 alt=""
-                className="z-10 absolute left-0 right-0 top-0 bottom-0 w-full  h-[124px]"
+                className="z-10 absolute left-0 right-0 top-0 bottom-0 w-full  h-[50px] xl:h-[148px]"
               />
             </div>
           </div>
 
-          <div className="flex flex-col justify-start items-start  relative gap-12 pl-6">
-            <div className="flex flex-col justify-start items-start relative gap-9">
-              <p className="w-full p-0 m-0 text-[27px] font-bold text-left">
-                <span className="w-[645px] text-[27px] font-bold text-left text-[#dffe71]">
+          <div className="flex flex-col justify-start items-start  relative gap-3 md:gap-12 xl:pl-6">
+            <div className="flex flex-col justify-start items-start relative gap-3 xl:gap-9">
+              <p className="w-full p-0 m-0 text-[9px] xl:text-[27px] font-bold text-left">
+                <span className="w-[645px] text-[9px] xl:text-[27px] font-bold text-left text-[#dffe71]">
                   Pickly Token
                 </span>
-                <span className="w-[645px] text-[27px] font-bold text-left text-black">
+                <span className="w-[645px] text-[9px] xl:text-[27px] font-bold text-left text-black">
                   ($PICKLY, ERC-20) is here, the tangy response to Pepe frenzy!
                   Offering everything Pepe does, but 100% cleaner and smarter,
                   our plucky pickle takes the memecoin world by storm.
                 </span>
               </p>
-              <p className="w-full p-0 m-0 text-[27px] font-bold text-left text-black">
+              <p className="w-full p-0 m-0 text-[9px] xl:text-[27px] font-bold text-left text-black">
                 Just like Pepe, Pickly features a stealth launch with no presale
                 and zero tax, but stands apart by being free of their shady Mev
                 Bots and hidden team wallets. Embrace Pickly’s irresistible
@@ -63,49 +63,50 @@ export default function Hero() {
                 flavorful era of meme tokens.
               </p>
             </div>
-            <div className="flex justify-start items-center relative gap-3 z-10">
-              <p className="text-[27px] font-bold text-left text-black">
+            <div className="flex justify-start items-center relative gap-1 xl:gap-3 z-10">
+              <p className="text-[9px] xl:text-[27px] font-bold text-left text-black">
                 Join the
               </p>
               <div className="flex flex-col justify-center items-center relative">
                 <svg
-                  width={176}
-                  height={50}
+                  // width={176}
+                  // height={50}
                   viewBox="0 0 176 50"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="flex-grow-0 flex-shrink-0"
+                  className="flex-grow-0 flex-shrink-0 w-[80px] xl:w-[176px]  xl:h-[50px]"
                   preserveAspectRatio="none"
+
                 >
                   <path
                     d="M165.619 1.11797C170.935 1.12925 174.27 2.53064 174.304 3.93202L175.304 46.5804C175.34 48.1075 170.187 49.1042 165.438 49.1244C114.261 49.3418 63.0973 49.1244 12.0048 48.4725C4.95938 48.3827 2.48639 46.4879 4.07924 44.9758C1.93067 44.5238 0.498992 43.7897 0.720861 42.7825C0.833888 42.2711 1.34356 41.8436 2.11591 41.494C2.7407 34.4449 3.36549 27.3955 3.99028 20.3461C4.31471 16.6746 4.64019 13.0027 4.96566 9.33092C5.20532 6.62005 2.33569 2.1426 13.9105 1.02929C19.0323 0.536989 25.3252 0.822372 30.6469 0.833658C37.2077 0.847632 43.7686 0.861337 50.3304 0.875041C63.452 0.902989 76.5747 0.930398 89.6974 0.958077C115.005 1.01128 140.312 1.06476 165.619 1.11797Z"
                     fill="black"
                   />
                 </svg>
-                <p className="absolute left-0 right-0 top-0 bottom-0 text-[27px] font-bold text-center m-0 p-0 pt-1 text-[#dffe71]">
+                <p className="absolute left-0 right-0 top-0 bottom-0 text-[9px] xl:text-[27px] font-bold text-center m-0 p-0 pt-1 text-[#dffe71]">
                   #PickleSquad
                 </p>
               </div>
-              <p className="text-[27px] font-bold text-left text-black">
+              <p className="text-[9px] xl:text-[27px] font-bold text-left text-black">
                 and let's relish the pickle mania together
               </p>
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-start  w-[755px] relative">
+        <div className="flex justify-between items-start w-full  xl:w-[755px] relative">
           <img
             src="pickle.png"
-            className="z-10 w-[452px] h-[936px] object-none"
+            className="z-10 w-[105px] h-full xl:w-[452px] xl:h-[936px] "
           />
 
           <div className="flex justify-start items-start  relative gap-2.5 px-2.5 pt-9">
             <svg
-              width="110"
-              height="159"
+              // width="110"
+              // height="159"
               viewBox="0 0 110 159"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className=""
+              className="w-[45px] h-full xl:w-[110px] xl:h-[159px]"
               preserveAspectRatio="none"
             >
               <path

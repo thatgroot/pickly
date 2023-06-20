@@ -5,29 +5,30 @@ export function Futilities() {
   return (
     <div
       id="futilities"
-      className="flex flex-col justify-center items-center h-full py-20 xl:h-[1920px] w-full relative gap-2.5 p-2.5 bg-[#75be24]"
+      className="flex flex-col justify-center items-center h-full py-20 xl:h-[1920px] w-full relative gap-2.5 px-6 bg-[#75be24]"
     >
       <div className="flex flex-col justify-start items-center gap-4">
-        <div className="flex justify-start items-start relative gap-2.5 p-2.5">
-          <p className="m-0 text-[150px] font-bold text-left text-[#efffb5]">
+        <div className="flex justify-between w-full items-center relative gap-2.5">
+          <p className="m-0 text-6xl xl:text-[150px] font-bold text-left text-[#efffb5]">
             Our Futilities
           </p>
-          <Futility />
+          {/* <Futility /> */}
+          <img src="futility.svg" className="absolute right-2 top-3 opacity-70" />
         </div>
-        <div className="flex flex-col justify-start items-center relative">
-          <p className="m-0 text-[40px] text-left text-[#efffb5]">
+        <div className="flex flex-col justify-start items-center relative text-[9px] lg:text-[40px]">
+          <p className="m-0 text-left text-[#efffb5]">
             Utilities? Pfft! We know you’re here for the green. Instead of
           </p>
-          <p className="m-0 text-[40px] text-left text-[#efffb5]">
+          <p className="m-0 text-left text-[#efffb5]">
             promising you worthless utilities that will take ages to develop and
           </p>
-          <p className="m-0 text-[40px] text-left text-[#efffb5]">
+          <p className="m-0 text-left text-[#efffb5]">
             do little to help the token moon, we are here to entertain the
           </p>
-          <p className="m-0 text-[40px] text-left text-[#efffb5]">
+          <p className="m-0 text-left text-[#efffb5]">
             #PicklySquad with social media memes and memeable futilities that
           </p>
-          <p className="m-0 text-[40px] text-left text-[#efffb5]">
+          <p className="m-0 text-left text-[#efffb5]">
             can help Pickly go viral and grow.
           </p>
         </div>
@@ -43,10 +44,10 @@ export function Futilities() {
               <div className="w-full h-full bg-[#191919] rounded-2xl block sm:hidden"></div>
             </div>
             <div className="flex flex-col justify-start items-center  relative">
-              <p className="m-0 text-[50px] leading-[48px] text-left text-[#efffb5]">
+              <p className="m-0  leading-[48px] text-left text-[#efffb5]">
                 The Art Of
               </p>
-              <p className="m-0 text-[50px] leading-[48px] text-left text-[#efffb5]">
+              <p className="m-0  leading-[48px] text-left text-[#efffb5]">
                 The Dill Book
               </p>
             </div>
@@ -87,9 +88,9 @@ export function Futilities() {
               </div>
               <div className="w-full h-full bg-[#191919] rounded-2xl block sm:hidden"></div>
             </div>
-            <div className="flex flex-col justify-start items-center  relative">
-              <p className="m-0 text-[50px] leading-[48px] text-left text-[#efffb5]">Pickly</p>
-              <p className="m-0 text-[50px] leading-[48px] text-left text-[#efffb5]">Pong</p>
+            <div className="flex flex-col justify-start items-center text-[50]  relative">
+              <p className="m-0  leading-[48px] text-left text-[#efffb5]">Pickly</p>
+              <p className="m-0  leading-[48px] text-left text-[#efffb5]">Pong</p>
             </div>
             <div className="flex flex-col justify-start items-center  relative">
               <p className="m-0 text-[25px] leading-[32px] text-left text-[#efffb5]">
