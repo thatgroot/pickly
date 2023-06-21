@@ -1,5 +1,3 @@
-import BrevoForm from "./BrevoForm";
-
 export function SubscriptionForm() {
   return (
     <div className="flex flex-col justify-center items-center relative py-[266px] bg-[#dffe71]">

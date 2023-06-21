@@ -1,5 +1,4 @@
 import Futility from "../elements/Futility";
-import { FutilityBc } from "../elements/FutilityBc";
 
 export function Futilities() {
   return (

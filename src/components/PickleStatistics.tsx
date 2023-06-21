@@ -1,96 +1,45 @@
 import { useEffect, useState } from "react";
 
 import { ethers } from "ethers";
+import { contractABI, contractAddress } from "../config";
 
 export default function PickleStatistics() {
   const [connected, setConnected] = useState(false);
   const [mintAmount, setMintAmount] = useState(1);
+  const [tokenPrice, setTokenPrice] = useState(1);
   const [provider, setProvider] = useState<ethers.BrowserProvider>();
+  const [signer, setSigner] = useState<ethers.Signer>();
+  const [contract, setContract] = useState<ethers.Contract | undefined>(
+    undefined
+  );
+  const [leftToMint, setLeftToMint] = useState(0);
+
+  const [batchAmount, setBatchAmount] = useState(0);
+
+  // const [_, setTotalSupply] = useState(0);
 
   const mint = async () => {
-    const contractAddress = "0xbE262418Cb4F6d7F725110F69C1F77F72f361772";
-    const contractABI = [
-      "function mint(address to, uint256 amount) public payable",
-      {
-        constant: true,
-        inputs: [],
-        name: "tokenPrice",
-        outputs: [
-          {
-            name: "",
-            type: "uint256",
-          },
-        ],
-        payable: false,
-        stateMutability: "view",
-        type: "function",
-      },
+    if (provider && signer && contract)
+      try {
+        // Get the signer's address
+        const signerAddress = await signer.getAddress();
+        console.log("signerAddress", signerAddress);
 
-      {
-        constant: false,
-        inputs: [
-          {
-            name: "to",
-            type: "address",
-          },
-          {
-            name: "amount",
-            type: "uint256",
-          },
-        ],
-        name: "mint",
-        outputs: [],
-        payable: true,
-        stateMutability: "payable",
-        type: "function",
-      },
-    ];
-    if (!provider) {
-      return;
-    }
-    const signer = await provider.getSigner();
+        const gasLimit = 150000; // Adjust the gas limit if needed
+        const etherAmount = ethers.parseEther(`${mintAmount * tokenPrice}`);
+        console.log("first", etherAmount);
+        const transaction = await contract.mint(signerAddress, mintAmount, {
+          value: etherAmount.toString(),
+          gasLimit: gasLimit,
+        });
 
-    try {
-      // Get the signer's address
-      const signerAddress = await signer.getAddress();
-      console.log("signerAddress", signerAddress);
-
-      // Define the amount to mint and the corresponding value in Ether
-
-      // Check if the signer has enough balance to cover the transaction
-      const balance = await provider?.getBalance(signerAddress);
-      const gasLimit = 150000; // Adjust the gas limit if needed
-
-      // Create a new contract instance
-      const contract = new ethers.Contract(
-        contractAddress,
-        contractABI,
-        signer
-      );
-
-      const tokenPrice = await contract.tokenPrice();
-      console.log("tokenPrice", tokenPrice);
-
-      // Convert tokenPrice to a compatible type (e.g., number or BigInt)
-      const tokenPriceNumber = Number(tokenPrice); // Or BigInt(tokenPrice);
-
-      const etherAmount = mintAmount * tokenPriceNumber;
-      console.log("etherAmount", etherAmount);
-
-      // Call the mint function
-      const transaction = await contract.mint(signerAddress, mintAmount, {
-        value: etherAmount.toString(),
-        gasLimit: gasLimit,
-      });
-
-      console.log("Transaction sent:", transaction.hash);
-    } catch (error) {
-      console.error("Error:", error);
-    }
-    // add token to metamask using ethers
+        console.log("Transaction sent:", transaction.hash);
+      } catch (error) {
+        console.error("Error:", error);
+      }
   };
 
-  const connect = () => {
+  const connect = async () => {
     // connect using ethers to metamask
     const provider = new ethers.BrowserProvider(window.ethereum);
     setProvider(provider);
@@ -98,6 +47,21 @@ export default function PickleStatistics() {
     // if connected
     if (provider) {
       setConnected(true);
+
+      setProvider(provider);
+      const signer = await provider.getSigner();
+      setSigner(signer);
+      const contract = new ethers.Contract(
+        contractAddress,
+        contractABI,
+        signer
+      );
+      setContract(contract);
+      const tokenPrice = await contract.tokenPrice();
+      setTokenPrice(Number(ethers.formatEther(tokenPrice)));
+      setLeftToMint(await contract.leftToMint());
+      setBatchAmount(await contract.BATCH_MINT());
+      // setTotalSupply(await contract.totalSupply());
     } else {
       return;
     }
@@ -521,7 +485,7 @@ export default function PickleStatistics() {
                   Mint NFT
                 </p>
                 <p className="m-0 text-[30px] font-bold text-left text-[#efffb5]">
-                  0/1000
+                  {Number(leftToMint)}/{Number(batchAmount)}
                 </p>
               </div>
               <div className="flex flex-col justify-start items-center relative gap-[63px]">
@@ -692,7 +656,7 @@ export default function PickleStatistics() {
                         Total
                       </p>
                       <p className="m-0 text-[30px] font-bold text-left text-[#efffb5]">
-                        0.4 ETH
+                        {(tokenPrice * mintAmount).toFixed(2)} ETH
                       </p>
                     </div>
                     <svg
@@ -723,7 +687,7 @@ export default function PickleStatistics() {
                     onClick={() => {
                       mint();
                     }}
-                    className="text-[#efffb5] text-[64px] font-bold bg-transparent outline-none border-0"
+                    className="text-[#efffb5] cursor-pointer hover:bg-[#D2FF43] hover:text-black hover:rounded-lg text-[64px] font-bold bg-transparent outline-none border-0 p-0 h-min-content leading-4 flex justify-center items-center m-0 pt-18 pl-24 pr-24"
                   >
                     Mint
                   </button>

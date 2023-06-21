@@ -90,10 +90,10 @@ export function Navigation() {
           </svg>
         </div>
       </div>
-      <div className="flex justify-between xl:justify-start items-center w-full m-[0 auto] xl:w-[1280px] 2xl:w-[1536px] gap-[42px] relative  overflow-hidden ">
+      <div className="flex justify-between xl:justify-start items-center w-full m-[0 auto] xl:w-[1280px] 2xl:w-full gap-[42px] relative  overflow-hidden ">
         <img
           src={"./navigation-background.png"}
-          className="absolute left-0 top-0 right-0 bottom-0 xl:w-[1280px] 2xl:w-[1536px] h-full hidden xl:block"
+          className="absolute left-0 top-0 right-0 bottom-0 xl:w-[1280px] 2xl:w-full h-full hidden xl:block"
         />
         <div className="flex justify-start px-6 w-fit items-center relative">
           <p className="p-0 m-0   w-max text-[32px] md:text-[24px] lg:text-[32px] xl:text-[42px] font-bold text-left space-y-0 leading-[38px] mt-[18px] text-black">
@@ -101,9 +101,9 @@ export function Navigation() {
           </p>
         </div>
         <div
-          className={`text-[32px] xl:text-[24px] 2xl:text-[28px] gap-12 xl:gap-[36px] 2xl:gap-[72px] 2xl:px-20 ${
+          className={`text-[32px] xl:text-[24px] 2xl:text-[28px] gap-12 xl:gap-[36px] 2xl:gap-[72px] 2xl:px-20 w-full ${
             isOpen ? "flex" : "hidden"
-          } xl:flex xl:w-[980px]  justify-start items-center w-full xl:h-24 xl:static xl:bg-transparent xl:flex-row xl:p-0  fixed inset-0 z-[999] bottom-[200px] bg-white flex-col p-6 h-screen `}
+          } xl:flex xl:w-[980px] justify-center items-center w-full xl:h-24 xl:static xl:bg-transparent xl:flex-row xl:p-0  fixed inset-0 z-[999] bottom-[200px] bg-white flex-col p-6 h-screen `}
         >
           <button
             onClick={() => {
@@ -111,7 +111,7 @@ export function Navigation() {
             }}
             className={`${
               isOpen ? "block" : "hidden"
-            } absolute right-12 top-12 text-[72px] bg-transparent border-0 text-black font-bold`}
+            } absolute right-24 top-0 text-[72px] bg-transparent border-0 text-black font-bold`}
           >
             x
           </button>
@@ -175,9 +175,20 @@ export function Navigation() {
           onClick={() => {
             setIsOpen(true);
           }}
-          className="text-[72px] bg-transparent border-0 bg-white rounded-sm block xl:hidden text-black font-bold z-50"
+          className="text-[72px] bg-transparent border-0 rounded-sm block xl:hidden text-black font-bold z-50"
         >
-          --
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            height="32px"
+            id="Layer_1"
+            version="1.1"
+            viewBox="0 0 32 32"
+            width="32px"
+            xmlSpace="preserve"
+          >
+            <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+          </svg>
         </button>
       </div>
     </div>
