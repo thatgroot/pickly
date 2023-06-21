@@ -43,7 +43,7 @@ export function BuyPickles() {
               </div>
             </div>
           </div>
-          <div className="flex justify-start flex-col items-center md:items-start md:flex-row w-full md:w-[556px] gap-12">
+          <div className="flex justify-start flex-col items-center md:items-start md:flex-row gap-12">
             <div className="flex justify-center items-center  w-[118px] h-[109px] relative rounded-[7px] bg-[#d2ff43]">
               <p className="m-0 text-[50px] font-bold text-left text-[#313131]">
                 02
@@ -53,7 +53,7 @@ export function BuyPickles() {
               <p className="m-0 text-[35px] font-bold text-left text-[#dffe71]">
                 Gather Some ETH
               </p>
-              <div className="flex flex-col justify-start items-start  relative gap-4 text-[30px]">
+              <div className="flex flex-col justify-start items-start  relative gap-4  w-[425px] text-[30px]">
                 <p className="m-0 leading-[42px] text-left text-[#f2f2f2]">
                   To indulge in $PICKLY, make sure you have some ETH in your
                   wallet. You can acquire ETH directly on Metamask, transfer

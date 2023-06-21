@@ -90,10 +90,10 @@ export function Navigation() {
           </svg>
         </div>
       </div>
-      <div className="flex justify-between xl:justify-start items-center w-full m-[0 auto] xl:w-[1280px] 2xl:w-[1400px] gap-[42px] relative  overflow-hidden ">
+      <div className="flex justify-between xl:justify-start items-center w-full m-[0 auto] xl:w-[1280px] 2xl:w-[1536px] gap-[42px] relative  overflow-hidden ">
         <img
           src={"./navigation-background.png"}
-          className="absolute left-0 top-0 right-0 bottom-0 xl:w-[1280px] 2xl:w-[1360px] h-full hidden xl:block"
+          className="absolute left-0 top-0 right-0 bottom-0 xl:w-[1280px] 2xl:w-[1536px] h-full hidden xl:block"
         />
         <div className="flex justify-start px-6 w-fit items-center relative">
           <p className="p-0 m-0   w-max text-[32px] md:text-[24px] lg:text-[32px] xl:text-[42px] font-bold text-left space-y-0 leading-[38px] mt-[18px] text-black">
@@ -101,7 +101,7 @@ export function Navigation() {
           </p>
         </div>
         <div
-          className={`text-[32px] xl:text-[24px] 2xl:text-[28px] gap-12 xl:gap-[36px] 2xl:gap-[72px] ${
+          className={`text-[32px] xl:text-[24px] 2xl:text-[28px] gap-12 xl:gap-[36px] 2xl:gap-[72px] 2xl:px-20 ${
             isOpen ? "flex" : "hidden"
           } xl:flex xl:w-[980px]  justify-start items-center w-full xl:h-24 xl:static xl:bg-transparent xl:flex-row xl:p-0  fixed inset-0 z-[999] bottom-[200px] bg-white flex-col p-6 h-screen `}
         >

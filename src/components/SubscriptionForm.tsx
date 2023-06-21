@@ -3,7 +3,6 @@ import BrevoForm from "./BrevoForm";
 export function SubscriptionForm() {
   return (
     <div className="flex flex-col justify-center items-center relative py-[266px] bg-[#dffe71]">
-      <BrevoForm />
       <div className="flex w-[425px] md:w-[640px] lg:w-[1080px] xl:w-[1280px] 2xl:w-[1440px] flex-col justify-between items-center relative p-4 box-border md:p-6 xl:p-12">
         <div className="flex flex-col justify-start items-center relative gap-[57px]">
           <div className="flex flex-col justify-start items-center relative gap-4">
@@ -21,12 +20,20 @@ export function SubscriptionForm() {
         </div>
         <div className="flex flex-col justify-start items-center relative gap-16  w-[425px] md:w-[560px] lg:w-[720px] xl:w-[1080px] 2xl:w-[1260px]">
           <div className="flex justify-between items-center relative w-full box-border p-4 pl-3 sm:pl-[32px] md:pl-[76px]">
-            <img
-              src={"./subscription-bg.png"}
-              className="absolute left-0 top-0 right-0 bottom-0 w-[425px] sm:w-[425px] md:w-[560px] lg:w-[720px] xl:w-[1080px] 2xl:w-[1260px] h-full"
-            />
-            {/* svg */}
-            <input
+
+            <iframe
+              width="100%"
+              height="425"
+              src="https://fc2d821b.sibforms.com/serve/MUIFAKlXVSkNqtP-GOfiSHrolrZrqh6agfzcbZibhF-3zH_XXfkeeGOSpcjdoReUboD8kjSzPclTyvfeQWT7rq3LaH6yLGnQ--6Om5SiZRERUc8lmQqeY-IKYUg6TvLvQEovZ4GIJo0o9vBmP_2QEmXHfrfJ8T_J_S5YyinKJovyhOPVLIJZXXOajFnW5joDmuAEF1UPI46NHvkH"
+              allowFullScreen={true}
+              style={{
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+                maxWidth: "100%",
+              }}
+            ></iframe>
+            {/* <input
               className="leading-[35px] pt-3 bg-transparent border-none outline-none w-max sm:w-full flex items-center justify-center p-0 m-0 text-[18px]  sm:text-[24px] lg:text-[40px] font-bold text-left text-[#dffe71] z-20"
               placeholder="Enter Valid Email"
             />
@@ -35,7 +42,7 @@ export function SubscriptionForm() {
                 src={"./subscription-btn-bg.png"}
                 className="h-16 lg:h-[120px] z-20"
               />
-            </div>
+            </div> */}
           </div>
 
           <p className="p-0 m-0 leading-[44px] text-[40px] text-center text-black">
