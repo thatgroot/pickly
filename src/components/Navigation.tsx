@@ -3,9 +3,9 @@ import { useState } from "react";
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-[-webkit-fill-available] p-12 flex flex-col justify-start items-center gap-8  bg-[#75be24]">
-      <div className="flex justify-end items-center gap-11 pr-36 w-max xl:w-[1080px]">
-        <div className="flex justify-start w-full items-center relative gap-6">
+    <div className="p-12 flex flex-col justify-start items-center gap-8  bg-[#75be24]">
+      <div className="flex justify-between md:justify-end items-center md:gap-11 md:pr-36 w-full">
+        <div className="flex justify-start lg:w-max items-center relative gap-6">
           <p className="text-[29px] leading-9 m-0 p-0 pt-2 text-left text-black">
             Follow Now
           </p>
@@ -95,13 +95,13 @@ export function Navigation() {
           src={"./navigation-background.png"}
           className="absolute left-0 top-0 right-0 bottom-0 xl:w-[1280px] 2xl:w-full h-full hidden xl:block"
         />
-        <div className="flex justify-start px-6 w-fit items-center relative">
-          <p className="p-0 m-0   w-max text-[32px] md:text-[24px] lg:text-[32px] xl:text-[42px] font-bold text-left space-y-0 leading-[38px] mt-[18px] text-black">
+        <div className="flex justify-start md:px-6 w-fit items-center relative">
+          <p className="p-0 m-0  xl:ml-[16px] xl:mt-[12px] 2xl:ml-[24px] 2xl:mt-[24px] w-max text-[32px] md:text-[24px] lg:text-[32px] xl:text-[36px] 2xl:text-[42px] font-bold text-left space-y-0 leading-[38px]  text-black">
             Pickly Token
           </p>
         </div>
         <div
-          className={`text-[32px] xl:text-[24px] 2xl:text-[28px] gap-12 xl:gap-[36px] 2xl:gap-[72px] 2xl:px-20 w-full ${
+          className={`lg:ml-[172px] text-[32px] xl:text-[24px] 2xl:text-[28px] gap-12 xl:gap-[36px] 2xl:gap-[72px] 2xl:px-20 w-full ${
             isOpen ? "flex" : "hidden"
           } xl:flex xl:w-[980px] justify-center items-center w-full xl:h-24 xl:static xl:bg-transparent xl:flex-row xl:p-0  fixed inset-0 z-[999] bottom-[200px] bg-white flex-col p-6 h-screen `}
         >

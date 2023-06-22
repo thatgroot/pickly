@@ -1,11 +1,11 @@
 export function PickleBanner() {
   return (
-    <div className="flex flex-col justify-center items-center  h-[416px] w-full relative gap-2.5 p-2.5 bg-black">
-      <p className="m-0  text-[50px] font-bold text-left text-[#e2fd7e]">
+    <div className="flex p-11 md:p-[112px]  flex-col justify-center items-center   relative gap-2.5   bg-black">
+      <p className="m-0  w-[425px] sm:w-[475px] md:w-[640px] xl:w-[720px] 2xl:w-[1024px] text-[36px] sm:text-[50px] font-bold text-left text-[#e2fd7e]">
         Let the pickalicious journey begin as you indulge
       </p>
       <div className="flex justify-start items-center  relative gap-[22px]">
-        <p className="m-0  text-[50px] font-bold text-left text-[#e2fd7e]">
+        <p className="m-0 text-[36px] sm:text-[50px] font-bold text-left text-[#e2fd7e]">
           in the tastiness of
         </p>
         <svg

@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <div className="flex flex-col justify-center items-center  w-full gap-2.5 p-2.5 bg-[#101010]">
-      <p className="m-0 text-[30px] text-left text-[#efffb5]  p-20">
+    <div className="flex px-6 py-11 md:px-[144px]  flex-col justify-center items-center gap-2.5 p-2.5 bg-[#101010]">
+      <p className="m-0 text-[30px] text-left text-[#efffb5]  px-3 md:p-20">
         $PICKLY is an entertainment project, intended solely for amusement
         purposes, and not to be considered as an investment opportunity. Unlike
         traditional investments, $PICKLY does not possess intrinsic value or

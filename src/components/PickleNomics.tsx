@@ -2,15 +2,15 @@ export default function PickleNomics() {
   return (
     <div
       id="tokenomics"
-      className="flex flex-col justify-center items-center w-full relative gap-20 py-32 bg-[#dffe71]"
+      className="flex px-[144px]  flex-col justify-center items-center relative gap-20 py-32 bg-[#dffe71]"
     >
       <img
         src={"/parachot.png"}
-        className="w-[144px] lg:w-[240px] xl:w-[324px] 2xl:w-[392px] absolute left-10 lg:left-16 top-8"
+        className="w-[96px] sm:w-[124px] md:w-[144px] lg:w-[240px] xl:w-[324px] 2xl:w-[392px] absolute left-10 lg:left-16 top-8"
       />
       <img
         src="/first-futility-token.png"
-        className="w-[196px] lg:w-[240px] xl:w-[324px] 2xl:w-[392px] absolute right-8 lg:right-16 top-8"
+        className="w-[108px] sm:w-[144px] md:w-[172px]  lg:w-[240px] xl:w-[324px] 2xl:w-[392px] absolute right-8 lg:right-16 top-8"
       />
 
       <div className="flex flex-col justify-start gap-12 items-center w-min">
@@ -31,20 +31,34 @@ export default function PickleNomics() {
       </div>
 
       <div className="flex flex-col items-center gap-6 justify-center">
-        <div className="flex items-center justify-center relative px-20">
-          <img src={"/noharm.png"} className="max-w-[80%]" />
-        </div>
+        <img
+          src={"/noharm.png"}
+          className="w-[375px] sm:w-full h-max max-w-[1510px]"
+        />
 
-        <div className="flex items-center justify-center relative px-20">
-          <img src={"/trillion.png"} className="max-w-[80%]" />
-        </div>
+        <img
+          src={"/trillion.png"}
+          className="w-[375px] sm:w-full  h-max max-w-5xl"
+        />
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-6">
-        <img src={"/lp.png"} className="max-w-[80%]" />
-        <img src={"/nftholders.png"} className="max-w-[80%]" />
-        <img src={"/cexlp.png"} className="max-w-[80%]" />
-        <img src={"/promotion.png"} className="max-w-[80%]" />
+      <div className="grid md:grid-cols-2 xl:grid-cols-3  2xl:flex justify-center w-full xl:flex gap-6">
+        <img
+          src={"/lp.png"}
+          className="h-auto w-full sm:w-auto sm:h-[96px] md:h-[68px] xl:h-[64px] 2xl:h-[84px]"
+        />
+        <img
+          src={"/nftholders.png"}
+          className="h-auto w-full sm:w-auto sm:h-[96px] md:h-[68px] xl:h-[64px] 2xl:h-[84px]"
+        />
+        <img
+          src={"/cexlp.png"}
+          className="h-auto w-full sm:w-auto sm:h-[96px] md:h-[68px] xl:h-[64px] 2xl:h-[84px]"
+        />
+        <img
+          src={"/promotion.png"}
+          className="h-auto w-full sm:w-auto sm:h-[96px] md:h-[68px] xl:h-[64px] 2xl:h-[84px]"
+        />
       </div>
     </div>
   );

@@ -2,49 +2,45 @@ export default function Hero() {
   return (
     <div
       id="about"
-      className="flex flex-col justify-start items-center  w-[-webkit-fill-available] relative overflow-hidden gap-11 py-0 px-24 bg-[#75be24]"
+      className="px-[144px] flex flex-col justify-start items-center relative overflow-hidden gap-11 py-0 bg-[#75be24]"
     >
-
       <div className="flex flex-col xl:flex-row justify-start items-start xl:gap-[48px] 2xl:gap-[64px] w-auto mx-0 my-auto">
         <div className="flex flex-col justify-start items-start  relative gap-16 w-full">
-          <div className="flex flex-col justify-start items-start  gap-[12px]">
-            <div className="relative flex bg-no-repeat h-[148px] w-full flex-col justify-center items-center  gap-3 py-0 px-3">
-              <div className="flex flex-col gap-3 items-start justify-center z-30">
-                <p className="text-[53px] leading-9 m-0 font-bold text-left text-[#98eb30]">
-                  Missed Pepe? Chasing
-                </p>
-                <p className="text-[53px] leading-9 m-0 font-bold text-left text-[#dffe71]">
-                  New Green?
-                </p>
-              </div>
-              <img
-                src={"/chasing-pepe.png"}
-                alt=""
-                className="z-10 absolute left-0 right-0 top-0 bottom-0 w-full  h-[124px]"
-              />
+          <div className="flex flex-col justify-start items-start mx-auto my-0 md:m-0  gap-[12px]">
+            <div
+              style={{
+                backgroundImage: "url(chasing-pepe.png)",
+              }}
+              className="flex flex-col bg-[length:348px]  sm:bg-[length:576px] gap-3  z-30 bg-no-repeat w-max sm:w-[576px] sm:h-[144px] items-start justify-center px-4 sm:px-11 py-3"
+            >
+              <p className="text-[36px] sm:text-[53px] leading-9 m-0 font-bold text-left text-[#98eb30]">
+                Missed Pepe? Chasing
+              </p>
+              <p className="text-[36px] sm:text-[53px] leading-9 m-0 font-bold text-left text-[#dffe71]">
+                New Green?
+              </p>
             </div>
-            <div className="relative flex bg-no-repeat h-[148px] w-full flex-col justify-center items-center  gap-3 py-0 px-3">
-              <div className="flex flex-col gap-3 items-start justify-center z-30">
-                <p className="text-[53px] leading-9 m-0 font-bold text-left text-[#98eb30]">
-                  You Just Found The
-                </p>
-                <p className="text-[53px] leading-9 m-0 font-bold text-left text-[#98eb30]">
-                  Greenest
-                  <span className=" font-bold text-left text-[#abe956]">
-                    of Greens!
-                  </span>
-                </p>
-              </div>
-              <img
-                src={"/just-found.png"}
-                alt=""
-                className="z-10 absolute left-0 right-0 top-0 bottom-0 w-full  h-[124px]"
-              />
+
+            <div
+              style={{
+                backgroundImage: "url(just-found.png)",
+              }}
+              className="flex flex-col bg-[length:348px]  sm:bg-[length:526px] gap-3  z-30 bg-no-repeat w-max h-[108px]  sm:w-[526px] sm:h-[155px] items-start justify-center px-11 py-3"
+            >
+              <p className="text-[36px] sm:text-[53px]  leading-9 m-0 font-bold text-left text-[#98eb30]">
+                You Just Found The
+              </p>
+              <p className="text-[36px] sm:text-[53px]  leading-9 m-0 font-bold text-left text-[#98eb30]">
+                Greenest
+                <span className=" font-bold text-left text-[#abe956]">
+                  of Greens!
+                </span>
+              </p>
             </div>
           </div>
 
-          <div className="flex flex-col justify-start items-start  relative gap-12 pl-6">
-            <div className="flex flex-col justify-start items-start relative gap-9">
+          <div className="flex flex-col justify-start items-start w-full  relative gap-12 pl-6">
+            <div className="w-[375px] mx-auto my-0 md:m-0 md:w-full  flex flex-col justify-start items-start relative gap-9">
               <p className="w-full p-0 m-0 text-[27px] font-bold text-left">
                 <span className="w-[645px] text-[27px] font-bold text-left text-[#dffe71]">
                   Pickly Token
@@ -63,7 +59,7 @@ export default function Hero() {
                 flavorful era of meme tokens.
               </p>
             </div>
-            <div className="flex justify-start items-center relative gap-3 z-10">
+            <div className="flex flex-col  md:flex-row justify-start w-[375px] mx-auto my-0 md:m-0 md:w-full   items-center relative gap-3 z-10">
               <p className="text-[27px] font-bold text-left text-black">
                 Join the
               </p>
@@ -92,10 +88,10 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-start  w-[755px] relative">
+        <div className="flex justify-between items-start  2xl:w-[755px] relative">
           <img
             src="pickle.png"
-            className="z-10 w-[452px] h-[936px] object-none"
+            className="z-10 w-[425px] md:w-[452px] h-[936px] object-none"
           />
 
           <div className="flex justify-start items-start  relative gap-2.5 px-2.5 pt-9">

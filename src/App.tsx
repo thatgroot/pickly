@@ -15,7 +15,6 @@ function App() {
   return (
     <div className="flex flex-col w-full overflow-hidden scroll-smooth">
       <Navigation />
-
       <Hero/>
       <SubscriptionForm/>
       <BuyPickles/>

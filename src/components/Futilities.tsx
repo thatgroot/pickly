@@ -1,20 +1,19 @@
-import Futility from "../elements/Futility";
 
 export function Futilities() {
   return (
     <div
       id="futilities"
-      className="flex flex-col justify-center items-center h-full py-20 xl:h-[1920px] w-full relative gap-2.5 p-2.5 bg-[#75be24]"
+      className="flex px-4 md:px-[144px]  flex-col justify-center items-center h-full py-20 xl:h-[1920px] relative gap-2.5 p-2.5 bg-[#75be24]"
     >
       <div className="flex flex-col justify-start items-center gap-4">
-        <div className="flex flex-col lg:flex-row justify-start items-start relative gap-2.5 p-2.5">
-          <p className="m-0 text-[150px] font-bold text-left text-[#efffb5]">
+        <div className="flex flex-col lg:flex-row justify-center sm:justify-start items-start relative gap-2.5 p-2.5">
+          <p className="m-0 text-[56px] sm:text-[72px] lg:text-[96px] xl:text-[108px] 2xl:text-[150px] font-bold text-left text-[#efffb5]">
             Our Futilities
           </p>
-          <Futility />
+          <img src="futility.svg"  />
         </div>
         <div className="flex flex-col justify-start items-center relative">
-          <p className="m-0 text-[40px] text-left text-[#efffb5]">
+          <p className="m-0 text-[36px] sm:text-[40px] text-left text-[#efffb5]">
             Utilities? Pfft! We know you’re here for the green. Instead of
             promising you worthless utilities that will take ages to develop and
             do little to help the token moon, we are here to entertain the
@@ -29,7 +28,7 @@ export function Futilities() {
           <div className="flex flex-col justify-center items-center  h-[494px] w-full sm:w-[398px]  relative">
             <div className="absolute left-0 right-0 top-0 bottom-0 w-full h-full sm:w-[398px] sm:h-[495px]">
               <div className="hidden sm:block h-full w-full ">
-                <img src="futilitybg.png" className="w-full h-full"/>
+                <img src="futilitybg.png" className="w-full h-full" />
               </div>
               <div className="w-full h-full bg-[#191919] rounded-2xl block sm:hidden"></div>
             </div>
@@ -74,7 +73,7 @@ export function Futilities() {
           <div className="flex flex-col justify-center items-center  h-[494px] w-full sm:w-[398px] relative">
             <div className="absolute left-0 right-0 top-0 bottom-0 w-full h-full sm:w-[398px] sm:h-[495px]">
               <div className="hidden sm:block h-full w-full ">
-                <img src="futilitybg.png" className="w-full h-full"/>
+                <img src="futilitybg.png" className="w-full h-full" />
               </div>
               <div className="w-full h-full bg-[#191919] rounded-2xl block sm:hidden"></div>
             </div>
@@ -119,7 +118,7 @@ export function Futilities() {
           <div className="flex flex-col justify-center items-center  h-[494px] w-full sm:w-[398px] relative">
             <div className="absolute left-0 right-0 top-0 bottom-0 w-full h-full sm:w-[398px] sm:h-[495px]">
               <div className="hidden sm:block h-full w-full ">
-                <img src="futilitybg.png" className="w-full h-full"/>
+                <img src="futilitybg.png" className="w-full h-full" />
               </div>
               <div className="w-full h-full bg-[#191919] rounded-2xl block sm:hidden"></div>
             </div>
@@ -166,7 +165,7 @@ export function Futilities() {
         <div className="flex flex-col items-center xl:flex-row gap-5 w-[425px] mx-4 sm:w-fit">
           <div className="flex flex-col justify-center items-center h-[494px] w-[398px] relative">
             <div className="absolute left-0 right-0 top-0 bottom-0">
-              <img src="futilitybg.png" className="w-full h-full"/>
+              <img src="futilitybg.png" className="w-full h-full" />
             </div>
             <div className="flex flex-col justify-start items-center relative">
               <p className="m-0 text-[50px] leading-[48px] text-left text-[#efffb5]">
@@ -207,10 +206,7 @@ export function Futilities() {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center w-full h-full md:h-[494px] md:w-[818px] flex-1 relative">
-            <img
-              className="w-full h-full z-50 mx-auto"
-              src="gallery.png"
-            />
+            <img className="w-full h-full z-50 mx-auto" src="gallery.png" />
           </div>
         </div>
       </div>

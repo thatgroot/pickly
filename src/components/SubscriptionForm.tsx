@@ -1,6 +1,6 @@
 export function SubscriptionForm() {
   return (
-    <div className="flex flex-col justify-center items-center relative py-[266px] bg-[#dffe71]">
+    <div className="flex px-[144px]  flex-col justify-center items-center relative py-[266px] bg-[#dffe71]">
       <div className="flex w-[425px] md:w-[640px] lg:w-[1080px] xl:w-[1280px] 2xl:w-[1440px] flex-col justify-between items-center relative p-4 box-border md:p-6 xl:p-12">
         <div className="flex flex-col justify-start items-center relative gap-[57px]">
           <div className="flex flex-col justify-start items-center relative gap-4">
