@@ -19,8 +19,12 @@ export default function PickleStatistics() {
   const [batchAmount, setBatchAmount] = useState(0);
 
   // const [_, setTotalSupply] = useState(0);
+  useEffect(() => {
+    connect();
 
+  }, [])
   const mint = async () => {
+    console.log(`minting ${provider}, ${signer}, ${contract}`)
     if (provider && signer && contract)
       try {
         // Get the signer's address
@@ -43,6 +47,7 @@ export default function PickleStatistics() {
 
   const connect = async () => {
     // connect using ethers to metamask
+    alert('connecting....')
     const provider = new ethers.BrowserProvider(window.ethereum);
     setProvider(provider);
 
@@ -79,9 +84,7 @@ export default function PickleStatistics() {
     });
   };
 
-  useEffect(() => {
-    connect();
-  }, []);
+
   return (
     <div
       id="nfts"

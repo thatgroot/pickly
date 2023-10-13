@@ -1,7 +1,6 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
-import _ from "lodash";
 const Carousel = ({ images }: { images: string[] }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedImage, setSelectedImage] = useState("");
@@ -70,7 +69,7 @@ const Carousel = ({ images }: { images: string[] }) => {
   const [prevImages, setPrevImages] = useState<string[]>([]);
 
   useEffect(() => {
-    if (_.isEqual(currentImages, prevImages)) {
+    if (currentImages === prevImages) {
       // currentImages hasn't changed, so we don't need to do anything
       return;
     }
@@ -100,7 +99,7 @@ const Carousel = ({ images }: { images: string[] }) => {
 
     // Remember the current images for next time
     setPrevImages(currentImages);
-  }, [currentSlide, currentImages, prevImages]);
+  }, []);
 
   return (
     <div className="relative">
